@@ -5,7 +5,7 @@ if(isset( $_POST['email']))
 $email = $_POST['email'];
 
 
-$content="From: $name";
+$content = "From: $name";
 $recipient = "yukigoto0311@gmail.com";
 $mailheader = "From: $email \r\n";
 $subject = "Order/Question";
