@@ -8,6 +8,8 @@ $email = $_POST['email'];
 $content="From: $name";
 $recipient = "yukigoto0311@gmail.com";
 $mailheader = "From: $email \r\n";
-mail($recipient, $content, $mailheader) or die("Error!");
-echo "Email sent!";
+$subject = "Order/Question";
+
+mail($recipient, $subject, $content, $mailheader) or die("Error!");
+echo "Message sent!";
 ?>
